@@ -9,6 +9,7 @@ const __dirname = import.meta.dirname || getDirname(import.meta.url)
 
 
 export default defineUserConfig({
+	base: '/portfolio_but2/',
 	bundler: viteBundler(),
 	port: 4040,
 	plugins: [
