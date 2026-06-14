@@ -26,7 +26,7 @@ export default defineUserConfig({
 		sidebar: [
 			{
 				text: 'Accueil',
-				link: '/README.md'
+				link: '/index.md'
 			},
 			{
 				text: 'Technique',

@@ -3,6 +3,8 @@ name: Construction des pages VuePress
 on:
   push:
     branches: ["main"]
+    paths-ignore:
+      - 'README.md'
   workflow_dispatch:
 
 permissions:
@@ -35,9 +37,6 @@ jobs:
 
       - name: Construction du site VuePress
         run: npm run build
-
-      - name: Désactiver Jekyll
-        run: touch build/.nojekyll
 
       - name: Chargement des artefacts
         uses: actions/upload-pages-artifact@v3
