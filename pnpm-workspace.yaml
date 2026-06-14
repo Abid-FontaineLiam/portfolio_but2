@@ -1,5 +1,6 @@
 allowBuilds:
   '@parcel/watcher': true
   esbuild: true
+# https://github.com/pnpm/pnpm/issues/8968
 packages:
   - .
