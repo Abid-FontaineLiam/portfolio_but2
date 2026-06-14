@@ -10,6 +10,8 @@ const __dirname = import.meta.dirname || getDirname(import.meta.url)
 
 export default defineUserConfig({
 	base: '/portfolio_but2/',
+	source: path.resolve(__dirname, '../..'), // Point vers le dossier "docs"
+  	dest: path.resolve(__dirname, '../../build'), // Force la sortie dans "build"
 	bundler: viteBundler(),
 	port: 4040,
 	plugins: [
