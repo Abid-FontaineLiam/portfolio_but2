@@ -19,6 +19,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     runs-on: ubuntu-latest
     steps:
       - name: Le checkout
@@ -35,6 +36,9 @@ jobs:
 
       - name: Construction du site VuePress
         run: npm run build
+
+      - name: Désactiver Jekyll
+        run: touch build/.nojekyll
 
       - name: Chargement des artefacts
         uses: actions/upload-pages-artifact@v3
