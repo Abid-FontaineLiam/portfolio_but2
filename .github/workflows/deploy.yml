@@ -27,7 +27,7 @@ jobs:
       - name: Installation de Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
           cache: 'npm'
 
       - name: Installation des dépendances
@@ -39,7 +39,7 @@ jobs:
       - name: Chargement des artefacts
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .vuepress/dist
+          path: build
 
       - name: Déploiement du site sur GitHub Pages
         id: deployment
