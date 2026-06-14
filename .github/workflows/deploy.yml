@@ -3,7 +3,6 @@ name: Construction des pages VuePress
 on:
   push:
     branches: ["main"]
-
   workflow_dispatch:
 
 permissions:
@@ -19,7 +18,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps: deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Le checkout
@@ -31,17 +30,17 @@ jobs:
           node-version: 20
           cache: 'npm'
 
-      - name: Install les dépendances
+      - name: Installation des dépendances
         run: npm ci
 
-      - name: Construit de site VuePress
+      - name: Construction du site VuePress
         run: npm run build
 
-      - name: Charge les artéfact
+      - name: Chargement des artefacts
         uses: actions/upload-pages-artifact@v3
         with:
           path: .vuepress/dist
 
-      - name: Deploie le site sur gitHub pages
+      - name: Déploiement du site sur GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
