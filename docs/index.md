@@ -39,7 +39,7 @@ Voici un exemple de tableau qui représente l'ordre d'attribution des informatio
 | ... | ... | ... | ... | ... | ... |
 
 Or ce travail demande beaucoup de temps à réaliser à la main, et le principe veut qu'il soit toujours mis à jour pour parler des dernières actualités du sujet. 
-C'est pourquoi mon tuteur de stage eu l'idée d'automatiser ce processus avec de l'intelligence artificielle qui pourrait faire le travail demandé plus rapidement.
+C'est pourquoi mon tuteur de stage eu l'idée d'automatiser ce processus avec de l'intelligence artificielle (IA) qui pourrait faire le travail demandé plus rapidement.
 
 ## Synthèse
 
@@ -57,4 +57,14 @@ Le back-end quant-a lui à été réaliser en Typescript en utilisant plusieurs 
 pour n'en sitées quelque uns.
 
 Des composant externe ont aussi été utilise pour mettre en place l'application, dans l'ordre nous avons :
-- [Llama.cpp](https://github.com/ggml-org/llama.cpp/tree/master) pour 
+- [Llama.cpp](https://github.com/ggml-org/llama.cpp/tree/master) pour l'utilisation et la communication en locale de Large Language Model (LLM) ou IA. 
+Des modifications on été apporter notament pour l'application d'un prompte système pour données les formalité au LLM à respecter, un la mise en place d'un chat template en [Jinja](https://jinja.palletsprojects.com/en/stable/) modifier,
+qui intègre de facon dynamique ce dit chat template.
+- [MongoBD](https://www.mongodb.com/fr-fr) la version community server, pour la mise en place d'une base de données utile pour stocker les documents fournir par l'utilisateur au format BJSON.
+- [Redis](https://redis.io/) une base de données au fonctionnement d'association de clé-valeur avec une grande capacité de vitesse d'utilisation, ici utiliser comme un cache pour la BDD principal.
+- [SearXNG](https://docs.searxng.org/) un méta-moteur qui sert à récolter le plus d'informations sur le web en fonction d'une query spécifier, il permet aussi un anonymas des services utiliser par les moteurs de recherche.
+Ce module créer en python, à légèrement été modifier pour permettre l'utilisation d'autre moteur de recherche non supporter nativement comme hal thèses et google patents, mais aussi l'implémentation d'un script qui vérifie la validité des liens obtenue pour que ceux-ci ne retourne pas d'informations éronné ou non disponible.
+- [Milvus](https://milvus.io/fr) une base de données verctoriel utiliser pour stocker les embeddings du LLM afin de les réutiliser dans des prompts future, correspondant au fonctionnement du Retrieval Augmented Generation (RAG).
+
+Et l'ensemble de l'architecture et hébergé et maintenue sur des conteneurs [Docker](https://www.docker.com/) grâce au module [Compose](https://docs.docker.com/compose/) de ce dernier.
+

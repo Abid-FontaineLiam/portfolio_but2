@@ -21,8 +21,17 @@ export default defineUserConfig({
 			},
 		}),
 	],
+	title: 'ABID--FONTAINE Lïam',
+	description: 'Documentation',
 	theme: defaultTheme({
-		logo: 'https://vuepress.vuejs.org/images/hero.png',
+		lastUpdated: false,
+		contributors: false,
+		navbar: [
+			{
+				text: 'Contactez-moi',
+				link: 'mailto:liam.abid--fontaine@edu.univ-fcomte.fr',
+			},
+		],
 		sidebar: [
 			{
 				text: 'Accueil',
@@ -31,10 +40,6 @@ export default defineUserConfig({
 			{
 				text: 'Technique',
 				link: '/pages/technique.md'
-			},
-			{
-				text: 'Suivi de projet',
-				link: '/pages/suivi-projet.md'
 			},
 			{
 				text: 'Intégration en entreprise',
