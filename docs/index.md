@@ -19,7 +19,7 @@ Elle travail aussi dans l'installation de tertiaires et de bornes de recharge en
 
 ### Présentation du projet
 
-Mon projet s'inscrit dans un contexte de modernisation de l'infrastructure et des outils, en lien avec les objectifs du département Recherche et Développement (R&D) de l'entreprise. 
+Mon projet s'inscrit dans un contexte de modernisation de l'infrastructure et des outils, en lien avec les objectifs du département Recherche et Développement (R&D) de l'entreprise auquelle mon tuteur de stage M.GUILLIEN et à la tête. 
 À la création de ce département, les domaines d'étude étaient centrés sur les nouvelles technologies utilisant de l'hydrogène. 
 Cependant, dans ce processus, la recherche d'informations sur le web et la collecte de données ont joué des manipulations importantes dans le métier.
 
