@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.30",
+    "@vuepress/plugin-markdown-chart": "2.0.0-rc.109",
     "@vuepress/plugin-markdown-image": "2.0.0-rc.130",
     "@vuepress/plugin-register-components": "2.0.0-rc.130",
     "@vuepress/theme-default": "2.0.0-rc.130",
