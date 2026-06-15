@@ -4,9 +4,9 @@ import { defaultTheme } from '@vuepress/theme-default';
 import { hopeTheme } from 'vuepress-theme-hope';
 import { defineUserConfig } from 'vuepress';
 import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
+import { markdownChartPlugin } from '@vuepress/plugin-markdown-chart'
 
 const __dirname = import.meta.dirname || getDirname(import.meta.url)
-
 
 export default defineUserConfig({
 	base: '/portfolio_but2/',
@@ -15,6 +15,9 @@ export default defineUserConfig({
 	bundler: viteBundler(),
 	port: 4040,
 	plugins: [
+		markdownChartPlugin({
+			mermaid: true,
+		}),
 		registerComponentsPlugin({
 			components: {
 				ImageComposant: path.resolve(__dirname, './components/ImageComposant.vue'),
@@ -44,6 +47,10 @@ export default defineUserConfig({
 			{
 				text: 'Intégration en entreprise',
 				link: '/pages/integration-entreprise.md'
+			},
+			{
+				text: 'Suivi de projet',
+				link: '/pages/suivi-de-projet.md'
 			}
 		]
 	})

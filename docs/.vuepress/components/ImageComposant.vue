@@ -1,3 +1,6 @@
+<script setup>
+import { withBase } from 'vuepress/client'
+</script>
 <script>
 export default {
   props: {
@@ -10,12 +13,12 @@ export default {
     },
     bgColor: {
       type: String,
-      default: 'transparent' // Couleur de fond si aligné au centre
+      default: 'transparent' 
     }
   },
   computed: {
     imagesrc() {
-      return './assets/' + this.src
+      return withBase('/assets/' + this.src)
     },
     // Génère le style dynamique pour le fond lorsque l'image est centrée
     containerStyle() {
@@ -44,40 +47,35 @@ export default {
 </template>
 
 <style scoped>
-/* Conteneur principal */
 .media-component {
   display: flex;
-  gap: 20px; /* Espace entre l'image et le texte */
-  align-items: center; /* Aligne verticalement au centre */
+  gap: 20px;
+  align-items: center;
   width: 100%;
   transition: all 0.3s ease;
 }
 
-/* Image à gauche (par défaut) */
 .align-left {
   flex-direction: row;
 }
 
-/* Image à droite */
 .align-right {
   flex-direction: row-reverse;
 }
 
-/* Image au centre (Prend toute la largeur, texte en dessous) */
 .align-center {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw; /* Prend toute la largeur de l'écran */
+  width: 50vw; 
   position: relative;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  padding: 40px 0; /* Un peu d'espace pour que la couleur de fond respire */
+  padding: 40px 0;
 }
 
-/* Ajustements pour l'image */
 figure {
   margin: 0;
   max-width: 100%;
@@ -96,13 +94,12 @@ figcaption {
   text-align: center;
 }
 
-/* Ajustement du texte */
 .media-text {
-  flex: 1; /* Permet au texte d'occuper l'espace restant */
+  flex: 1;
 }
 
 .align-center .media-text {
-  max-width: 800px; /* Optionnel : Évite que le texte soit trop large au centre */
+  max-width: 800px;
   text-align: justify;
   padding: 0 20px;
 }

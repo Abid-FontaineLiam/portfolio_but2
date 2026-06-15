@@ -3,7 +3,7 @@ Ce site contient une description et une anlyse des savoir-faire que j'ai obtenue
 2ème années de BUT au sein de l'entreprise [STEIM S.A.S.](https://www.steim.fr).
 À la gauche de vôtre écran, vous pouvez accéder au 3 autres parties principales, où vous pouvez simplement
 passer à la suite en appuyant sur le boutons next en fin de documents.
-
+Les images attachées à chaques partie peuvent être agrandit en appuyant dessus.
 ## Contexte
 
 ### Présentation de l'entreprise
@@ -22,8 +22,6 @@ Elle travail aussi dans l'installation de tertiaires et de bornes de recharge en
 Mon projet s'inscrit dans un contexte de modernisation de l'infrastructure et des outils, en lien avec les objectifs du département Recherche et Développement (R&D) de l'entreprise. 
 À la création de ce département, les domaines d'étude étaient centrés sur les nouvelles technologies utilisant de l'hydrogène. 
 Cependant, dans ce processus, la recherche d'informations sur le web et la collecte de données ont joué des manipulations importantes dans le métier.
-
----
 
 En outre, cette recherche doit suivre un protocole strict qui visait à récupérer le plus d'informations utiles d'un document sans que l'observateur et besoin de le lire, 
 en suivant une méthodologie qui prend en compte les critères de pertinence et de fiabilité des sources. 
