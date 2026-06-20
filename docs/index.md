@@ -11,7 +11,7 @@ Les images attachées à chaques partie peuvent être agrandit en appuyant dessu
 <p>
 L'entreprise STEIM, et une S.A.S (<a href="https://fr.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_par_actions_simplifi%C3%A9e">Société par Action Simplifiées</a>) 
 créer en 1985 par M.LOVITON qui compte aujourd'hui environ 51-200 à employées. 
-Basées à Chèvrement Belfort, elle propose ses services dans l'étude et la réalisation projet,
+Basées à <a href="https://maps.app.goo.gl/KAcAt3TpuZTyKjRw7">Chèvremont</a>, elle propose ses services dans l'étude et la réalisation projet,
 l'intégration d'équipements électrique, l'automatisme et la robotique. 
 Elle travail aussi dans l'installation de tertiaires et de bornes de recharge en passant par le développement photovoltaïque.
 </p>
